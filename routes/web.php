@@ -18,3 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('roles/{user}',[\App\Http\Controllers\UserController::class,'roles']);
+Route::get('country',[\App\Http\Controllers\CountryController::class,'index']);
+Route::get('post',[\App\Http\Controllers\PostController::class,'index']);
+Route::get('post/tag',[\App\Http\Controllers\PostController::class,'tag']);
